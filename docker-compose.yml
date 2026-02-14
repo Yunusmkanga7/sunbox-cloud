@@ -1,0 +1,7 @@
+version: '3'
+services:
+  sunbox:
+    build: .
+    container_name: sunbox
+    ports:
+      - "8080:8080"

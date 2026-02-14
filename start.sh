@@ -1,9 +1,8 @@
 #!/bin/bash
 
-echo "Starting Sunbox Cloud Sandbox..."
+echo "Starting Sunbox Web Terminal..."
 
-# Start Docker service if available
 service docker start 2>/dev/null || true
 
-# Keep container alive
-sleep infinity
+ttyd -p 8080 bash
+
